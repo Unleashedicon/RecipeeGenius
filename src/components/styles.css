@@ -1,0 +1,68 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.py-6 {
+  padding-top: 0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 624px;
+  height: 427px;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute; /* Position the content over the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style for the title */
+.slide-content h2 {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 10px; /* Space below the title */
+  color: #f1c40f; /* Custom title color */
+}
+
+/* Style for the description */
+.slide-content p {
+  font-size: 16px; /* Adjust the font size */
+  margin: 0; /* Remove default margin */
+  color: #ffffff; /* Custom description color */
+}

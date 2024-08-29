@@ -1,0 +1,126 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #131212; /* Light green background color */
+  width: 400px; /* Set the width of the slides */
+  height: auto; /* Adjust height as needed */
+  
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Rounded edges */
+  border-radius: 12px; /* Adjust the radius as needed */
+}
+
+.popular-recipes-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0; /* Adjust margin as needed */
+}
+
+.popular-recipes-tag {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+}
+
+.see-more-link {
+  font-size: 1rem;
+  color: green; /* Adjust color as needed */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.see-more-link:hover {
+  color: darkgreen; /* Adjust hover color as needed */
+}
+
+.see-more-arrow {
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.swiper-slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ensure all slides have the same height */
+}
+
+.swiper-slide-image {
+  display: block;
+  width: auto !important; /* Reduce width to account for the 20px border on left and right */
+  height: auto !important; /* Set a fixed height */
+  object-fit: cover;
+}
+
+.swiper-slide-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.decorative-line {
+  position: relative;
+  width: 50%;
+  height: 2px; /* Line thickness */
+  background-color: #4CAF50; /* Line color */
+  margin: 0 auto; /* Center the line horizontally */
+}
+
+.decorative-line::before,
+.decorative-line::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Position slightly below the line */
+  width: 20px; /* Curve width */
+  height: 10px; /* Curve height */
+  border-radius: 50%; /* Creates the semi-circle */
+  background-color: #4CAF50; /* Match line color */
+  transform: scaleX(2); /* Stretch the circle horizontally */
+}
+
+.decorative-line::before {
+  left: -10px; /* Adjust left position */
+}
+
+.decorative-line::after {
+  right: -10px; /* Adjust right position */
+}
+
+.choice {
+  font-family: 'Lobster Two', system-ui;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 150%; /* 150% of the parent element's font size */
+  font-weight: 600; /* Semi-bold */
+}
